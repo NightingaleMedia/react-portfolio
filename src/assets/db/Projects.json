@@ -1,0 +1,92 @@
+[
+  {
+    "Title": "Realtime Messaging App",
+    "Date": "October 2020",
+    "Description": "Exhibitors at a virtual event wanted a way to communicate with one another.  We solved this by creating a real time chat application where attendees can ask questions and conversations can happen in real time.",
+    "PicLink": "firebase.gif",
+    "Category": "backend",
+    "LiveLink": "https://millsjameseventcms-testing.uc.r.appspot.com/OSU-Biannual-Clinicians-Well-Being-Summit/exhibitors/560",
+    "Tags": "firebase | gooogle api | drive"
+  },
+  {
+    "Title": "Realtime Donation Tracker",
+    "Date": "December 2020",
+    "Description": "For a live event* the client wanted to get second-by-second information for donation data coming in.  By using SSE protocols* I worked with the team to build a react app that tracks donations.  We raised over $4 Million!",
+    "PicLink": "tracker.gif",
+    "Category": "frontend",
+    "LiveLink": "https://secure-temple-19626.herokuapp.com/site",
+    "Tags": ""
+  },
+  {
+    "Title": "Glassroom eCommerce Site",
+    "Date": "September 2020",
+    "Description": "An art studio was looking to leverage their existing business and create a website built on top of the powerful Shopify API to create a fast* app-like site that is interactive and feature-rich.  We were really happy with the result.",
+    "PicLink": "glassroom.gif",
+    "Category": "frontend",
+    "LiveLink": "https://glassroomart.com",
+    "Tags": "Gatsby | React | CI | eCommerce"
+  },
+  {
+    "Title": "Sleepy Bee Menu",
+    "Date": "May 2020",
+    "Description": "Restaurant owners wanted an interactive way to engage with their menu especially during Covid-19* where physical menus are out of the question.  They can update the menu anytime through a live back end.",
+    "PicLink": "sbmenu.gif",
+    "Category": "frontend",
+    "LiveLink": "www.sleepybee.com/menu",
+    "Tags": "Javascript | d3.js | PHP | CSS"
+  },
+  {
+    "Title": "Cleanlites Order Form",
+    "Date": "May 2020",
+    "Description": "This is a very complex order form that does not transfer easily to a computer setting.  In line with helping the company integrate with their CRM software* we worked to make this order form accessible and extensible.",
+    "PicLink": "cleanlitesorder.gif",
+    "Category": "backend",
+    "LiveLink": "http://www.cleanlites.com/order",
+    "Tags": "Javascript | React | REST | PHP "
+  },
+  {
+    "Title": "Covid-19 Data Viz",
+    "Date": "April 2020",
+    "Description": "Since the outbreak of Covid-19 NY magazine has been tracking sentiment. Using a combination of node.js* a little Python and mostly vanilla javascript* we vizualized the data in compelling ways. ",
+    "PicLink": "covid19.gif",
+    "Category": "frontend",
+    "LiveLink": "http://www.albertsigman.com/visualization-project-001/index.html",
+    "Tags": "Javascript | Python | d3.js"
+  },
+  {
+    "Title": "Flashcard Study App",
+    "Date": "April 2020",
+    "Description": "This was a capstone project for my tech bootcamp.  We made an interactive game that builds and stores study decks and cards.",
+    "PicLink": "cards.gif",
+    "Category": "other",
+    "LiveLink": "http://random-access-cards.herokuapp.com/",
+    "Tags": "Java | Javascript | REST | HTML/CSS"
+  },
+  {
+    "Title": "Custom Pre Loader",
+    "Date": "October 2019",
+    "Description": "Using adobe after effects and my own branding I made a custom .gif preloader for my website.",
+    "PicLink": "preloader.gif",
+    "Category": "creative",
+    "LiveLink": "http://albertsigman.com/",
+    "Tags": "After Effects | Adobe | Javascript"
+  },
+  {
+    "Title": "Lighting Style Quiz",
+    "Date": "January 2020",
+    "Description": "This quiz was made for an application I am working on that brings lighting designers to your house without needing in-person consultations.  ",
+    "PicLink": "quiz.gif",
+    "Category": "frontend",
+    "LiveLink": "http://www.albertsigman.com/digital-playground/style-quiz/",
+    "Tags": "Python | Django | Javascript | jQuery"
+  },
+  {
+    "Title": "JS Drum Machine",
+    "Date": "Februay 2020",
+    "Description": "I am trying to learn everything there is to know about the Javascript engine.  Part of this was having some fun with the audio buffer.",
+    "PicLink": "drumkit.gif",
+    "Category": "music",
+    "LiveLink": "http://www.albertsigman.com/digital-playground/drum-machine/",
+    "Tags": "Javascript | Music"
+  }
+]

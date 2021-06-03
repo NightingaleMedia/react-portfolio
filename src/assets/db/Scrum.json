@@ -1,0 +1,157 @@
+[
+  {
+    "Skill": "Max MSP",
+    "Mastery": "todo",
+    "Category": "Creative"
+  },
+  {
+    "Skill": "Hibernate / H2",
+    "Mastery": "todo",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "MVC",
+    "Mastery": "todo",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Node.js",
+    "Mastery": "todo",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Django",
+    "Mastery": "inprogress",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Python",
+    "Mastery": "inprogress",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Touch Designer",
+    "Mastery": "todo",
+    "Category": "Creative"
+  },
+  {
+    "Skill": "d3 Data Viz",
+    "Mastery": "todo",
+    "Category": "Frontend"
+  },
+  {
+    "Skill": "Raspberry Pi Programming",
+    "Mastery": "inprogress",
+    "Category": "Other"
+  },
+  {
+    "Skill": "Linux/Bash",
+    "Mastery": "mastered",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Spring Framework",
+    "Mastery": "mastered",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Ableton Live",
+    "Mastery": "mastered",
+    "Category": "Music"
+  },
+  {
+    "Skill": "ProTools",
+    "Mastery": "mastered",
+    "Category": "Music"
+  },
+  {
+    "Skill": "Adobe Creative Suite",
+    "Mastery": "mastered",
+    "Category": "Creative"
+  },
+  {
+    "Skill": "PHP",
+    "Mastery": "mastered",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Bootstrap / Responsive Design",
+    "Mastery": "mastered",
+    "Category": "Frontend"
+  },
+  {
+    "Skill": "HTML 5",
+    "Mastery": "mastered",
+    "Category": "Frontend"
+  },
+  {
+    "Skill": "CSS5",
+    "Mastery": "mastered",
+    "Category": "Frontend"
+  },
+  {
+    "Skill": "Python Essentials",
+    "Mastery": "mastered",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Javascript Essentials",
+    "Mastery": "mastered",
+    "Category": "Frontend"
+  },
+  {
+    "Skill": "Java ",
+    "Mastery": "mastered",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "MySQL",
+    "Mastery": "mastered",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Git Source Control",
+    "Mastery": "mastered",
+    "Category": "Other"
+  },
+  {
+    "Skill": "Angular",
+    "Mastery": "inprogress",
+    "Category": "Frontend"
+  },
+  {
+    "Skill": "GoLang",
+    "Mastery": "todo",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Express.js",
+    "Mastery": "todo",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "GraphQL",
+    "Mastery": "inprogress",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Apollo Client",
+    "Mastery": "inprogress",
+    "Category": "Frontend"
+  },
+  {
+    "Skill": "Next.js",
+    "Mastery": "inprogress",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "React.js",
+    "Mastery": "inprogress",
+    "Category": "Frontend"
+  },
+  {
+    "Skill": "SCSS/Sass",
+    "Mastery": "todo",
+    "Category": "Frontend"
+  }
+]
