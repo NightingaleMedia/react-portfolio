@@ -3,7 +3,7 @@ import Sketch from "react-p5";
 const HeaderSketch = ({ parentRef }) => {
   var stars = [],
     WIDTH = window.innerWidth,
-    HEIGHT = window.innerHeight,
+    HEIGHT = window.innerHeight < 1000 ? 1000 : window.innerHeight,
     FPS = 24, // Frames per second
     NUM_STARS = WIDTH; // Number of stars
 

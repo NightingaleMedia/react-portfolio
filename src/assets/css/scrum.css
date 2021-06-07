@@ -193,21 +193,22 @@
 }
 
 .music {
-  background-color: #e69c4e;
+  background-color: #ffa719;
 }
 
 .frontend {
-  background-color: #269863;
+  background-color: #21be7a;
   color: white;
 }
 
 .backend {
-  background-color: #5f0f6f;
+  background-color: #a80fdf;
   color: white;
 }
 
 .creative {
   background-color: #0084f5;
+  color: white;
 }
 
 .other {

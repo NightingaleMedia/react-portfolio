@@ -139,6 +139,7 @@ h3 {
 
 .header-inner {
   height: 100vh;
+  min-height: 1000px;
   overflow-x: hidden;
   width: 100%;
   position: relative;
@@ -167,6 +168,10 @@ header#header {
   color: white !important;
   opacity: 1;
   font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   height: 100%;
 }
@@ -174,7 +179,25 @@ header#header {
 .header-one {
   background-color: rgba(255, 255, 255, 0.3);
   height: 360px;
+  transform: translate(155%, 143%);
+  transform-origin: center center;
   width: 360px;
+}
+
+.header-two {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform-origin: center center;
+  transform: translate(165%, 15%);
+  height: 460px;
+  width: 460px;
+}
+
+.header-three {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(40%, 60%);
+  transform-origin: center center;
+  height: 300px;
+  width: 300px;
 }
 
 .header-one:hover,
@@ -183,21 +206,11 @@ header#header {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.header-two {
-  background-color: rgba(255, 255, 255, 0.3);
-  height: 460px;
-  width: 460px;
-}
-
-.header-three {
-  background-color: rgba(255, 255, 255, 0.3);
-  height: 300px;
-  width: 300px;
-}
-
 .header-text {
   font-size: 1.5em !important;
   position: absolute;
+  top: 35px;
+  left: 35px;
 }
 
 .grid-container-projects {

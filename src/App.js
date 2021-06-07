@@ -10,7 +10,7 @@ import "./assets/css/style.css";
 import Preloader from "./components/Preloader";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
-import Scrumboard from "./components/Scrumboard";
+import Scrumboard from "./components/Scrumboard/Scrumboard";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import { useState } from "react";
