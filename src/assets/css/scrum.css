@@ -26,6 +26,70 @@
   font-weight: 500;
   font-size: 1em;
 }
+.single-skill.adding {
+  grid-template-columns: 1fr;
+}
+.single-skill .adding {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+}
+
+.adding input:focus,
+.adding select:focus {
+  outline: none;
+}
+
+.adding input {
+  color: white;
+  border: none;
+  background-color: unset;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.adding input::placeholder {
+  color: rgb(224, 224, 224);
+}
+.adding select {
+  border: none;
+  padding: 8px 10px 8px 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: white;
+}
+
+.adding .button--area {
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.adding .button--area .cancel,
+.adding .button--area .add {
+  background-color: white;
+  border-radius: 100%;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.adding .button--area .cancel:hover,
+.adding .button--area .add:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.adding .button--area .cancel {
+  color: rgb(255, 89, 89);
+}
+.adding .button--area .add {
+  color: rgb(18, 223, 127);
+}
+
+.single-skill .input--options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .single-skill--content {
   grid-area: content;
@@ -214,7 +278,24 @@
 .other {
   background-color: #dbd4e5;
 }
-
+.new {
+  background-color: #e2e2e2;
+  color: #181818;
+  transition: all 0.2s ease;
+}
+.new .single-skill--content {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.new div.add {
+  margin: 0 auto;
+  transform: scale(300%);
+  transform-origin: center center;
+  text-align: center;
+}
 .skill-scrum-todo {
   grid-column: 1;
   display: flex;
@@ -233,10 +314,6 @@
   border-top-right-radius: 18px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-}
-
-.skill-scrum--board div:last-child {
-  margin-bottom: 15px;
 }
 
 .skill-scrum--board div:not(.skill-scrum--header) {

@@ -4,7 +4,11 @@ const SingleSkillLegend = ({ toggle_square, data, index }) => {
   return (
     <div className={styles.toggle_wrap} onClick={() => toggle_square(index)}>
       <div className={styles.toggle}>
-        <input type={`checkbox`} checked={data.activated} />
+        <input
+          type={`checkbox`}
+          checked={data.activated}
+          onChange={(e) => e.preventDefault()}
+        />
         <span></span>
       </div>
       <div
