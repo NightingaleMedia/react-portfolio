@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SingleSkill from "./SingleSkill";
 import { Droppable, Draggable } from "react-beautiful-dnd";
 import AddScrum from "./AddScrum";
-
+import { CSSTransition } from "react-transition-group";
 const SingleBoard = ({
   skill_title,
   list,
@@ -29,12 +29,13 @@ const SingleBoard = ({
           {list &&
             list.map((sk, index) => (
               <SingleSkill
-                key={`${skill_title}--${sk.Skill}-${sk.index}`}
+                key={`${skill_title}--${sk.Skill}-${sk.id}`}
                 data={sk}
                 update_skill={update_skill}
                 index={index}
               />
             ))}
+
           {provided.placeholder}
           <AddScrum board={skill_title} callback={addSkill} />
         </div>

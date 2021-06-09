@@ -12,19 +12,24 @@ import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Scrumboard from "./components/Scrumboard/Scrumboard";
 import Projects from "./components/Projects";
+import MegaMenu from "./components/MegaMenu";
 import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
   const [DOMContentLoaded, setDomContentLoaded] = useState(false);
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const load_callback = () => {
     setDomContentLoaded(true);
   };
+
   return (
     <>
       <head>
         <meta charset="utf-8" />
-        <title>Albert Sigman Resume</title>
+        <title>Albert Sigman | Nightingale</title>
         <meta name="description" content="" />
         <meta name="author" content="" />
 
@@ -34,11 +39,11 @@ function App() {
         />
         <link rel="shortcut icon" href="favicon.png" />
       </head>
-
-      <body>
-        <Preloader loaded={DOMContentLoaded} />
+      <MegaMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <body className={menuOpen ? "menu-open" : ""}>
+        {/* <Preloader loaded={DOMContentLoaded} /> */}
         <main>
-          <Sidebar />
+          <Sidebar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           <div className="main2">
             <Header load_callback={load_callback} />
             <Scrumboard />

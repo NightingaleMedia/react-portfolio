@@ -22,17 +22,25 @@ const AddScrum = ({ callback, board }) => {
 
   const handleSubmit = () => {
     const skill_to_add = { ...state.newSkill };
-
+    if (!skill_to_add.Skill) {
+      return;
+    }
     skill_to_add.Mastery = board;
-    skill_to_add.id = encodeURI(skill_to_add.name);
+    skill_to_add.id =
+      encodeURI(skill_to_add.Skill) + "--" + Math.ceil(Math.random() * 1000000);
     callback(skill_to_add);
     setState({ adding: false, newSkill: skill_init });
   };
 
+  useEffect(() => {
+    if (state.adding) {
+      inputRef.current.focus();
+    }
+  }, [state.adding]);
+
   if (!state.adding) {
     return (
       <div
-        ref={inputRef}
         onClick={() => setState((prev) => ({ ...prev, adding: true }))}
         className={`single-skill new`}
       >
@@ -49,6 +57,7 @@ const AddScrum = ({ callback, board }) => {
     >
       <div className="single-skill--content adding">
         <input
+          ref={inputRef}
           type="text"
           placeholder="Type here..."
           value={state.newSkill.Skill}
@@ -74,18 +83,21 @@ const AddScrum = ({ callback, board }) => {
             <option value="other">Other</option>
           </select>
           <div className="button--area">
-            {state.newSkill.Skill && (
-              <FontAwesomeIcon
-                className="add"
-                icon={faCheckCircle}
-                onClick={handleSubmit}
-              />
-            )}
+            <FontAwesomeIcon
+              className={`add ${state.newSkill.Skill ? "" : "disabled"}`}
+              icon={faCheckCircle}
+              onClick={handleSubmit}
+            />
 
             <FontAwesomeIcon
               className="cancel"
               icon={faTimesCircle}
-              onClick={() => setState((prev) => ({ ...prev, adding: false }))}
+              onClick={() =>
+                setState({
+                  newSkill: { skill_init },
+                  adding: false,
+                })
+              }
             />
           </div>
         </div>

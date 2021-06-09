@@ -10,6 +10,18 @@
   display: flex;
   justify-content: center;
 }
+
+.skill-scrum--board {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #cccccc;
+  min-height: 550px;
+  transition: all 0.2s ease;
+}
+
 .single-skill {
   display: grid;
   grid-template-columns: 1fr 30px;
@@ -33,6 +45,13 @@
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 1fr;
+}
+
+.single-skill.new {
+  cursor: pointer;
+}
+.single-skill.new div.add {
+  color: rgb(143, 143, 143);
 }
 
 .adding input:focus,
@@ -69,6 +88,7 @@
 .adding .button--area .add {
   background-color: white;
   border-radius: 100%;
+
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -84,6 +104,10 @@
 .adding .button--area .add {
   color: rgb(18, 223, 127);
 }
+.adding .button--area .add.disabled {
+  color: rgb(100, 100, 100);
+  cursor: not-allowed;
+}
 
 .single-skill .input--options {
   display: flex;
@@ -94,15 +118,6 @@
 .single-skill--content {
   grid-area: content;
   padding: 10px;
-}
-
-.skill-scrum--board {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: #cccccc;
 }
 
 .single-skill--drag {
@@ -335,4 +350,30 @@
   display: flex;
   flex-direction: column;
   background-color: #cccccc;
+}
+
+.example-enter {
+  opacity: 0.01;
+  transform: translateX(-100%) scale(90%);
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: all 100ms ease;
+  transform: translateX(0%) scale(100%);
+}
+
+.example-exit {
+  opacity: 1;
+  transform: translateY(0%) scale(90%);
+}
+
+.example-exit.example-exit-active {
+  opacity: 0.01;
+  transition: all 200ms ease;
+  transform: translateY(-500px) scale(20%);
+}
+
+.example-exit-done {
+  visibility: hidden;
 }

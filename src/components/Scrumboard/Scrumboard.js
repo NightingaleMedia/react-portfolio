@@ -3,6 +3,7 @@ import Skill_JSON from "../../assets/db/Scrum.json";
 import SingleBoard from "./SingleBoard";
 import SingleSkillLegend from "./SingleSkillLegend";
 import { DragDropContext } from "react-beautiful-dnd";
+
 const skillz = [
   { DisplayName: "Front End", activated: true },
   { DisplayName: "Back End", activated: true },
@@ -121,16 +122,18 @@ const Scrumboard = () => {
     }));
   };
   return (
-    <section className="bg--1 padding-bot scrumboard">
+    <section className="bg--1 padding-bot scrumboard" id={"skills"}>
       <div className="scrum-head bg--1">
         <center>
           <h2 className="bk scrum-header">My Skillset Scrum Board</h2>
           <p className="scrum-description">
             Over the past few years I have slowly been fleshing out a vast
             technical and creative skillset. I put some of my skills to use in
-            developing this interactive scrumboard with vanilla Javascript. It
-            is a work in progress but the core functionality is there. Give it a
-            shot, click around.
+            developing this interactive <code>react</code> based scrumboard.
+            <br />
+            Give it a shot, click around.
+            <br />
+            <code>react react-dnd </code>
           </p>
         </center>
 
