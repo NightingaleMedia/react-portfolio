@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./skillLegend.module.css";
+import * as styles from "./skillLegend.module.css";
 const SingleSkillLegend = ({ toggle_square, data, index }) => {
   return (
     <div className={styles.toggle_wrap} onClick={() => toggle_square(index)}>
@@ -14,8 +14,8 @@ const SingleSkillLegend = ({ toggle_square, data, index }) => {
       <div
         className={`skill-square ${data.DisplayName.toLowerCase().replace(
           / /gi,
-          ""
-        )}${data.activated ? "" : "skill-square--off"}`}
+          "",
+        )}--skill ${data.activated ? "" : "skill-square--off"}`}
       >
         <center>{data.DisplayName}</center>
       </div>

@@ -1,27 +1,27 @@
-import React, { useEffect, useState } from "react";
-import Skill_JSON from "../../assets/db/Scrum.json";
-import SingleBoard from "./SingleBoard";
-import SingleSkillLegend from "./SingleSkillLegend";
-import { DragDropContext } from "react-beautiful-dnd";
+import React, { useEffect, useState } from 'react';
+import Skill_JSON from '../assets/db/Scrum.json';
+import SingleBoard from './SingleBoard';
+import SingleSkillLegend from './SingleSkillLegend';
+import { DragDropContext } from 'react-beautiful-dnd';
 
 const skillz = [
-  { DisplayName: "Front End", activated: true },
-  { DisplayName: "Back End", activated: true },
-  { DisplayName: "Creative", activated: true },
-  { DisplayName: "Other", activated: true },
+  { DisplayName: 'Front End', activated: true },
+  { DisplayName: 'Back End', activated: true },
+  { DisplayName: 'Creative', activated: true },
+  { DisplayName: 'Other', activated: true },
 ];
 
 const initial = {
-  todo: {
-    name: "To Do",
+  learning: {
+    name: 'Learning',
     list: [],
   },
-  inprogress: {
-    name: "In Progress",
+  workingknowledge: {
+    name: 'Working Knowledge',
     list: [],
   },
   mastered: {
-    name: "Mastered",
+    name: 'Mastered',
     list: [],
   },
 };
@@ -40,9 +40,11 @@ const Scrumboard = () => {
       skill.id = encodeURI(skill.Skill);
     });
 
-    boards.inprogress.list = skills.filter((sk) => sk.Mastery === "inprogress");
-    boards.mastered.list = skills.filter((sk) => sk.Mastery === "mastered");
-    boards.todo.list = skills.filter((sk) => sk.Mastery === "todo");
+    boards.workingknowledge.list = skills.filter(
+      (sk) => sk.Mastery === 'workingknowledge'
+    );
+    boards.mastered.list = skills.filter((sk) => sk.Mastery === 'mastered');
+    boards.learning.list = skills.filter((sk) => sk.Mastery === 'learning');
 
     set_skill_boards(boards);
   }, []);
@@ -52,8 +54,8 @@ const Scrumboard = () => {
     Object.keys(boards).map((sk) => {
       boards[sk].list.map((skill) => {
         if (
-          skill.Category.toLowerCase().replace(/ /gi, "") ===
-          DisplayName.toLowerCase().replace(/ /gi, "")
+          skill.Category.toLowerCase().replace(/ /gi, '') ===
+          DisplayName.toLowerCase().replace(/ /gi, '')
         ) {
           skill.activated = activated;
         }
@@ -75,39 +77,37 @@ const Scrumboard = () => {
     if (!source?.droppableId || !destination?.droppableId) {
       return;
     }
+    console.log(source.droppableId, destination.droppableId);
 
-    if (source.droppableId !== destination.droppableId) {
-      //first update the individual skill
-      let boards = { ...skill_boards };
-      let updated = boards[source.droppableId].list.find(
-        (sk) => sk.id == draggableId
-      );
+    //first update the individual skill
+    let boards = { ...skill_boards };
+    console.log(boards[source.droppableId]);
+    let updated = boards[source.droppableId].list.find(
+      (sk) => sk.id === draggableId
+    );
 
-      updated.Mastery = destination.droppableId;
-      let old_list = [...boards[source.droppableId].list];
-      let new_list = [...boards[destination.droppableId].list];
-      const [removed] = old_list.splice(source.index, 1);
-      new_list.splice(destination.index, 0, removed);
-      // then update the board
-      set_skill_boards((prev) => ({
-        ...prev,
-        [source.droppableId]: {
-          ...prev[source.droppableId],
-          list: old_list,
-        },
-        [destination.droppableId]: {
-          ...prev[destination.droppableId],
-          list: new_list,
-        },
-      }));
-    } else {
-      return;
-    }
+    updated.Mastery = destination.droppableId;
+    let old_list = [...boards[source.droppableId].list];
+    let new_list = [...boards[destination.droppableId].list];
+    const [removed] = old_list.splice(source.index, 1);
+    new_list.splice(destination.index, 0, removed);
+    // then update the board
+    set_skill_boards((prev) => ({
+      ...prev,
+      [source.droppableId]: {
+        ...prev[source.droppableId],
+        list: old_list,
+      },
+      [destination.droppableId]: {
+        ...prev[destination.droppableId],
+        list: new_list,
+      },
+    }));
   };
 
   const addSkill = (skill) => {
     let boards = { ...skill_boards };
-    const name = skill.Mastery.toLowerCase().replace(/ /gi, "");
+    const name = skill.Mastery.toLowerCase().replace(/ /gi, '');
 
     boards[name].list.push(skill);
 
@@ -122,8 +122,8 @@ const Scrumboard = () => {
     }));
   };
   return (
-    <section className="bg--1 padding-bot scrumboard" id={"skills"}>
-      <div className="scrum-head bg--1">
+    <section className="bg--3 padding-bot scrumboard" id={'skills'}>
+      <div className="scrum-head ">
         <center>
           <h2 className="bk scrum-header">My Skillset Scrum Board</h2>
           <p className="scrum-description">
@@ -132,15 +132,13 @@ const Scrumboard = () => {
             developing this interactive <code>react</code> based scrumboard.
             <br />
             Give it a shot, click around.
-            <br />
-            <code>react react-dnd </code>
           </p>
         </center>
 
         <div className="skill-legend">
           {skill_titles.map((sk, index) => (
             <SingleSkillLegend
-              key={sk + "--" + index}
+              key={index}
               data={sk}
               toggle_square={toggle_square}
               index={index}

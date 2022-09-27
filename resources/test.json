@@ -1,0 +1,168 @@
+[{
+        "Skill": "Max MSP",
+        "Mastery": "todo",
+        "Category": "Creative"
+    },
+    {
+        "Skill": "Hibernate / H2",
+        "Mastery": "todo",
+        "Category": "Backend"
+    },
+    {
+        "Skill": "MVC",
+        "Mastery": "todo",
+        "Category": "Backend"
+    },
+    {
+        "Skill": "Node.js",
+        "Mastery": "todo",
+        "Category": "Backend"
+    }, {
+        "Skill": "Django",
+        "Mastery": "inprogress",
+        "Category": "Backend"
+    }, {
+        "Skill": "Python",
+        "Mastery": "inprogress",
+        "Category": "Backend"
+    }, {
+        "Skill": "Touch Designer",
+        "Mastery": "todo",
+        "Category": "Creative"
+    }, {
+        "Skill": "d3 Data Viz",
+        "Mastery": "todo",
+        "Category": "Frontend"
+    }, {
+        "Skill": "Raspberry Pi Programming",
+        "Mastery": "inprogress",
+        "Category": "Other"
+    }, {
+        "Skill": "Linux/Bash",
+        "Mastery": "mastered",
+        "Category": "Backend"
+    }, {
+        "Skill": "Spring Framework",
+        "Mastery": "mastered",
+        "Category": "Backend"
+    }, {
+        "Skill": "Ableton Live",
+        "Mastery": "mastered",
+        "Category": "Music"
+    }, {
+        "Skill": "ProTools",
+        "Mastery": "mastered",
+        "Category": "Music"
+    }, {
+        "Skill": "Adobe Creative Suite",
+        "Mastery": "mastered",
+        "Category": "Creative"
+    }, {
+        "Skill": "PHP",
+        "Mastery": "mastered",
+        "Category": "Backend"
+    }, {
+        "Skill": "Bootstrap / Responsive Design",
+        "Mastery": "mastered",
+        "Category": "Frontend"
+    }, {
+        "Skill": "HTML 5",
+        "Mastery": "mastered",
+        "Category": "Frontend"
+    }, {
+        "Skill": "CSS5",
+        "Mastery": "mastered",
+        "Category": "Frontend"
+    }, {
+        "Skill": "Python Essentials",
+        "Mastery": "mastered",
+        "Category": "Backend"
+    }, {
+        "Skill": "Javascript Essentials",
+        "Mastery": "mastered",
+        "Category": "Frontend"
+    }, {
+        "Skill": "Java ",
+        "Mastery": "mastered",
+        "Category": "Backend"
+    }, {
+        "Skill": "MySQL",
+        "Mastery": "mastered",
+        "Category": "Backend"
+    }, {
+        "Skill": "Git Source Control",
+        "Mastery": "mastered",
+        "Category": "Other"
+    }, {
+        "Skill": "Angular",
+        "Mastery": "inprogress",
+        "Category": "Frontend"
+    }, {
+        "Skill": "GoLang",
+        "Mastery": "todo",
+        "Category": "Backend"
+    }, {
+        "Skill": "Express.js",
+        "Mastery": "todo",
+        "Category": "Backend"
+    }, {
+        "Skill": "GraphQL",
+        "Mastery": "inprogress",
+        "Category": "Backend"
+    }, {
+        "Skill": "Apollo Client",
+        "Mastery": "inprogress",
+        "Category": "Frontend"
+    }, {
+        "Skill": "Next.js",
+        "Mastery": "inprogress",
+        "Category": "Backend"
+    }, {
+        "Skill": "React.js",
+        "Mastery": "inprogress",
+        "Category": "Frontend"
+    }, {
+        "Skill": "SCSS/Sass",
+        "Mastery": "todo",
+        "Category": "Frontend"
+    }
+] r "},{"
+Title ":"
+Covid - 19 Data Viz ","
+Date ":"
+April 2020 ","
+Description ":"\
+"Since the outbreak of Covid-19 NY magazine has been tracking sentiment. Using a combination of node.js", "PicLink": " a little Python and mostly vanilla javascript", "Category": " we vizualized the data in compelling ways. \"", "LiveLink": "covid19.gif", "Tags": "frontend"
+}, {
+    "Title": "Flashcard Study App",
+    "Date": "April 2020",
+    "Description": "This was a capstone project for my tech bootcamp.  We made an interactive game that builds and stores study decks and cards.",
+    "PicLink": "cards.gif",
+    "Category": "other",
+    "LiveLink": "http://random-access-cards.herokuapp.com/",
+    "Tags": "Java | Javascript | REST | HTML/CSS"
+}, {
+    "Title": "Custom Pre Loader",
+    "Date": "October 2019",
+    "Description": "Using adobe after effects and my own branding I made a custom .gif preloader for my website.",
+    "PicLink": "preloader.gif",
+    "Category": "creative",
+    "LiveLink": "http://albertsigman.com/",
+    "Tags": "After Effects | Adobe | Javascript"
+}, {
+    "Title": "Lighting Style Quiz",
+    "Date": "January 2020",
+    "Description": "This quiz was made for an application I am working on that brings lighting designers to your house without needing in-person consultations.  ",
+    "PicLink": "quiz.gif",
+    "Category": "frontend",
+    "LiveLink": "http://www.albertsigman.com/digital-playground/style-quiz/",
+    "Tags": "Python | Django | Javascript | jQuery"
+}, {
+    "Title": "JS Drum Machine",
+    "Date": "Februay 2020",
+    "Description": "I am trying to learn everything there is to know about the Javascript engine.  Part of this was having some fun with the audio buffer.",
+    "PicLink": "drumkit.gif",
+    "Category": "music",
+    "LiveLink": "http://www.albertsigman.com/digital-playground/drum-machine/",
+    "Tags": "Javascript | Music"
+}]

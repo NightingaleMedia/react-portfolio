@@ -53,7 +53,9 @@ const AddScrum = ({ callback, board }) => {
 
   return (
     <div
-      className={`single-skill ${state?.newSkill?.Category || "other"} adding`}
+      className={`single-skill ${
+        state?.newSkill?.Category || "other"
+      }--skill adding`}
     >
       <div className="single-skill--content adding">
         <input

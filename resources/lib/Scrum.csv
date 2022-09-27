@@ -1,0 +1,34 @@
+Skill,Mastery,Category
+Max MSP,learning,Creative
+Node.js,mastered,Backend
+Python,workingknowledge,Backend
+Touch Designer,learning,Creative
+d3 Data Viz,workingknowledge,Frontend
+Raspberry Pi Programming,inprogress,Other
+Linux/Bash,mastered,Backend
+Object Oriented (OOP),mastered,Backend
+Ableton Live / ProTools,mastered,Creative
+HTML 5 / CSS5,mastered,Frontend
+Python Scripting,mastered,Backend
+Javascript,mastered,Frontend
+"Structured Query Language (Postgres, MySQL)",mastered,Backend
+Git Source Control,mastered,Other
+Angular,learning,Frontend
+GoLang,learning,Backend
+GraphQL,workingknowledge,Backend
+Apollo Client,workingknowledge,Frontend
+Next.js,mastered,Backend
+React.js,mastered,Frontend
+Gatsby.js,mastered,Frontend
+KOA.js / Express.js,mastered,Backend
+MongoDB,workingknowledge,Backend
+Google Cloud Platform,mastered,Backend
+Kubernetes,learning,Backend
+OAuth / JWT,workingknowledge,Other
+Websockets / Socket.IO,mastered,Backend
+P5.js / Processing,workingknowledge,Creative
+Prisma,mastered,Backend
+Rails,learning,Backend
+Swift,learning,Other
+React Native,learning,Other
+PyTorch ML,workingknowledge,creative

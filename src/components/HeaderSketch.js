@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Sketch from "react-p5";
-const HeaderSketch = ({ parentRef }) => {
+
+const HeaderSketch = React.forwardRef((props, ref) => {
+  console.log(ref);
   var stars = [],
     WIDTH = window.innerWidth,
-    HEIGHT = window.innerHeight < 1000 ? 1000 : window.innerHeight,
-    FPS = 24, // Frames per second
-    NUM_STARS = WIDTH; // Number of stars
+    HEIGHT = window.innerHeight,
+    FPS = 30, // Frames per second
+    NUM_STARS = 5000; // Number of stars
 
   const setup = (p5, parentRef) => {
     var header = p5.createCanvas(WIDTH, HEIGHT);
@@ -26,7 +28,8 @@ const HeaderSketch = ({ parentRef }) => {
 
     p5.frameRate(FPS);
     p5.loop();
-    header.parent(parentRef);
+    // console.log(parentRef);
+    header.parent(ref.current);
   };
   const draw = (p5) => {
     p5.background(24, 24, 24);
@@ -71,6 +74,6 @@ const HeaderSketch = ({ parentRef }) => {
       windowResized={windowResized}
     />
   );
-};
+});
 
 export default HeaderSketch;

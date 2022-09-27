@@ -1,0 +1,83 @@
+[
+  { "Skill": "Max MSP", "Mastery": "learning", "Category": "Creative" },
+  { "Skill": "Node.js", "Mastery": "mastered", "Category": "Backend" },
+  { "Skill": "Python", "Mastery": "workingknowledge", "Category": "Backend" },
+  { "Skill": "Touch Designer", "Mastery": "learning", "Category": "Creative" },
+  {
+    "Skill": "d3 Data Viz",
+    "Mastery": "workingknowledge",
+    "Category": "Frontend"
+  },
+  {
+    "Skill": "Raspberry Pi Programming",
+    "Mastery": "mastered",
+    "Category": "Other"
+  },
+  { "Skill": "Linux/Bash", "Mastery": "mastered", "Category": "Backend" },
+  {
+    "Skill": "Object Oriented (OOP)",
+    "Mastery": "mastered",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "Ableton Live / ProTools",
+    "Mastery": "mastered",
+    "Category": "Creative"
+  },
+  { "Skill": "HTML 5 / CSS5", "Mastery": "mastered", "Category": "Frontend" },
+  { "Skill": "Python Scripting", "Mastery": "mastered", "Category": "Backend" },
+  { "Skill": "Javascript", "Mastery": "mastered", "Category": "Frontend" },
+  {
+    "Skill": "\"Structured Query Language (Postgres",
+    "Mastery": " MySQL)\"",
+    "Category": "mastered"
+  },
+  { "Skill": "Git Source Control", "Mastery": "mastered", "Category": "Other" },
+  { "Skill": "Angular", "Mastery": "learning", "Category": "Frontend" },
+  { "Skill": "GoLang", "Mastery": "learning", "Category": "Backend" },
+  { "Skill": "GraphQL", "Mastery": "workingknowledge", "Category": "Backend" },
+  {
+    "Skill": "Apollo Client",
+    "Mastery": "workingknowledge",
+    "Category": "Frontend"
+  },
+  { "Skill": "Next.js", "Mastery": "mastered", "Category": "Backend" },
+  { "Skill": "React.js", "Mastery": "mastered", "Category": "Frontend" },
+  { "Skill": "Gatsby.js", "Mastery": "mastered", "Category": "Frontend" },
+  {
+    "Skill": "KOA.js / Express.js",
+    "Mastery": "mastered",
+    "Category": "Backend"
+  },
+  { "Skill": "MongoDB", "Mastery": "workingknowledge", "Category": "Backend" },
+  {
+    "Skill": "Google Cloud Platform",
+    "Mastery": "mastered",
+    "Category": "Backend"
+  },
+  { "Skill": "Kubernetes", "Mastery": "learning", "Category": "Backend" },
+  {
+    "Skill": "OAuth / JWT",
+    "Mastery": "workingknowledge",
+    "Category": "Other"
+  },
+  {
+    "Skill": "Websockets / Socket.IO",
+    "Mastery": "mastered",
+    "Category": "Backend"
+  },
+  {
+    "Skill": "P5.js / Processing",
+    "Mastery": "workingknowledge",
+    "Category": "Creative"
+  },
+  { "Skill": "Prisma", "Mastery": "mastered", "Category": "Backend" },
+  { "Skill": "Rails", "Mastery": "learning", "Category": "Backend" },
+  { "Skill": "Swift", "Mastery": "learning", "Category": "Other" },
+  { "Skill": "React Native", "Mastery": "learning", "Category": "Other" },
+  {
+    "Skill": "PyTorch ML",
+    "Mastery": "workingknowledge",
+    "Category": "creative"
+  }
+]

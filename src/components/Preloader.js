@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import loader from "../../src/assets/img/preloader/preloader.gif";
-const Preloader = ({ loaded }) => {
+import { TheAppContext } from "../AppContext";
+const Preloader = () => {
+  const { DOMContentLoaded } = useContext(TheAppContext);
+
   const [disappear, setDisappear] = useState(false);
   const [percent, setPercent] = useState(0);
   const [message, setMessage] = useState("Loading...");
@@ -12,7 +15,7 @@ const Preloader = ({ loaded }) => {
         clearInterval(interval);
       }
       setPercent(Math.ceil(i));
-      i = i * 1.21;
+      i = i * 1.41;
     }, 100);
     return () => {
       clearInterval(interval);
@@ -20,15 +23,15 @@ const Preloader = ({ loaded }) => {
   }, []);
 
   useEffect(() => {
-    if (loaded) {
+    if (DOMContentLoaded) {
       setTimeout(() => {
         setMessage("Hi, I'm Al");
         setTimeout(() => {
           setDisappear(true);
         }, 1500);
-      }, 3000);
+      }, 2000);
     }
-  }, [loaded]);
+  }, [DOMContentLoaded]);
   return (
     <div id="preloader" className={`${disappear ? "loaded" : ""}`}>
       <div className="preloader-loaded" style={{ width: percent + "%" }}>

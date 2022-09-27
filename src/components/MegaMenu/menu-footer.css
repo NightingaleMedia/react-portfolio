@@ -1,0 +1,45 @@
+.menu-footer__div {
+  color: white;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  z-index: 1001;
+}
+.menu-footer__div h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  color: white;
+
+  text-align: unset;
+}
+.menu-footer__div > div {
+  margin: 0.75rem 0;
+}
+
+.menu-footer__div .email {
+  color: var(--as-blue);
+  margin: 0.5rem 0;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+.menu-footer__div > div.connect {
+  margin: 2rem 0;
+  letter-spacing: 2px;
+}
+.menu-footer__div > div.icons {
+  margin: 2rem 0;
+  font-size: 20px;
+  transition: all 0.2s ease;
+}
+
+.menu-footer__div svg {
+  margin: 0 2rem 0 0;
+}
+.menu-footer__div svg:hover {
+  transform: scale(120%);
+  cursor: pointer;
+  color: var(--as-blue);
+}

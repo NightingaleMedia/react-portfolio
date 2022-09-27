@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SingleSkill from "./SingleSkill";
 import { Droppable, Draggable } from "react-beautiful-dnd";
 import AddScrum from "./AddScrum";
-import { CSSTransition } from "react-transition-group";
+
 const SingleBoard = ({
   skill_title,
   list,

@@ -12,10 +12,14 @@ const SingleSkill = ({ data, index }) => {
       <Draggable draggableId={data.id} index={index}>
         {(provided, snapshot) => (
           <div
+            style={{
+              ...provided.draggableProps.style,
+              opacity: snapshot.isDragging ? 1 : "inherit",
+            }}
             ref={provided.innerRef}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
-            className={`single-skill ${data.Category.toLowerCase()} ${
+            className={`single-skill ${data.Category.toLowerCase()}--skill ${
               data.activated ? "" : "single-skill--off"
             } `}
           >

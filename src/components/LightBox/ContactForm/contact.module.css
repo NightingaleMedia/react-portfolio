@@ -1,0 +1,145 @@
+.contact {
+  height: 750px;
+  overflow-y: scroll;
+  min-width: 450px;
+  transition: all 0.2s ease;
+  display: flex;
+  /* height: 100%; */
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Helvetica;
+}
+
+.contact h2 {
+  color: var(--as-dark-grey);
+  text-align: left;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact button {
+  margin-top: 1rem;
+}
+.inputArea {
+}
+.input {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 100%;
+}
+
+.input > label {
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.input > input {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  border: 3px solid rgba(60, 60, 60, 0.1);
+  border-radius: 3px;
+  min-height: 35px;
+}
+
+.input textarea {
+  border: none;
+  padding: 0.5rem;
+  border: 3px solid rgba(60, 60, 60, 0.1);
+  height: 150px;
+  font-size: 1.25rem;
+  grid-column: 1/-1;
+}
+.submitting {
+  height: 300px;
+}
+.loading {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  border-radius: 100%;
+  border: 6px solid var(--as-purple);
+  transform-origin: center center;
+  animation: target 1.2s ease 0ms infinite;
+}
+
+.loading::after {
+  content: " ";
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  height: 20px;
+  width: 20px;
+  margin: auto;
+  border-radius: 100%;
+  background-color: var(--as-light-grey);
+  transform-origin: center center;
+  animation: rotate 800ms linear 0.45s infinite;
+}
+.complete {
+  text-align: center;
+  transition: all 0.2s ease;
+  min-height: unset;
+  height: 300px;
+}
+
+.complete h2 {
+  text-align: center;
+  color: var(--as-dark-grey);
+}
+
+.reachMe {
+  height: 100%;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+.ital {
+  transform: skew(-15deg, 0deg);
+  color: var(--as-light-grey);
+}
+
+.reachIcons {
+  font-size: 2rem;
+  color: var(--as-light-grey);
+}
+
+.reachIcons svg {
+  margin: 1rem 0.5rem;
+}
+
+.reachIcons svg:hover {
+  color: var(--as-purple);
+  cursor: pointer;
+}
+
+@keyframes target {
+  0% {
+    transform: translateX(-35px);
+  }
+
+  50% {
+    transform: translateX(35px);
+  }
+  100% {
+    transform: translateX(-35px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translateX(15px);
+  }
+  50% {
+    transform: rotate(180deg) translateX(15px);
+  }
+  100% {
+    transform: rotate(360deg) translateX(15px);
+  }
+}
