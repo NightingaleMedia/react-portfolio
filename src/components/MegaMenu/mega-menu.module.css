@@ -100,7 +100,7 @@
 }
 
 .sub_menu__block ul.hover-frontend::after {
-  content: '';
+  content: "";
   border-bottom: 1px solid white;
   width: 100%;
   position: absolute;
@@ -144,7 +144,7 @@
 }
 
 .sub_menu__block.sm ul::after {
-  content: '';
+  content: "";
   border-bottom: 0px solid white;
   width: 100%;
   position: absolute;

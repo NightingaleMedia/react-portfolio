@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import loader from "../../src/assets/img/preloader/preloader.gif";
-import { TheAppContext } from "../AppContext";
+import { TheAppContext } from "../provider/AppContext";
 const Preloader = () => {
   const { DOMContentLoaded } = useContext(TheAppContext);
 

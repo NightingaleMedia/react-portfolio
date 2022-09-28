@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
-import { TheAppContext } from "../AppContext";
+import { TheAppContext } from "../provider/AppContext";
 import Scrollspy from "react-scrollspy";
 import logo from "../assets/img/logo.png";
 import Contact from "./LightBox/ContactForm/Contact";
+import classname from "classnames";
 const Sidebar = () => {
   const { menuOpen, setMenuOpen, setBoxShowing } = useContext(TheAppContext);
   return (
@@ -13,6 +14,7 @@ const Sidebar = () => {
             <img src={logo} className="logo" />
           </a>
         </div>
+
         <div
           className={`sidebar-inner menu-holder ${menuOpen ? "menu-open" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
